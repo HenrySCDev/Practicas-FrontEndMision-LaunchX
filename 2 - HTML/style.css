@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  /*border: 0;*/
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  color: rgb(40, 40, 40);
+}
+
+/*body {
+  /*background-image: url(images/spaceBg.jpg);
+  background-size:  cover;
+  background-repeat: no-repeat;
+  
+  
+}*/
+
+footer {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: rgba(76, 76, 76, 0.4);
+  text-shadow: 0.1em 0.1em 0.2em rgb(54, 54, 54);
+}
+
+header {
+  align-items: center;
+  display: flex;
+  background-color: rgb(30, 30, 30);
+  /*background-image: url(images/spaceBg.jpg);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 4em;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin-left: 1rem;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul a {
+  display: block;
+  font-size: 1.3rem;
+  height: 4rem;
+  padding: 1.3rem;
+  color: rgb(240, 240, 240);
+}
+
+#sabores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 85%;
+}
+
+#sabores h2 {
+  /*align-items: flex-end;*/
+  padding: 1.5rem;
+  width: 100%;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.div-sabores {
+  align-items: center;
+  margin: 1rem;
+  background: rgba(240, 240, 240);
+  box-shadow: 0 8px 32px 0 rgba(40, 40, 40, 0.37);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.div-sabores div {
+  padding: 0.5rem;
+  height: 2em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: bolder;
+  /*-webkit-text-stroke: 1px black;*/
+}
+
+#chocolate {
+  background-color: rgb(210, 105, 30);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#vainilla {
+  background-color: rgb(244, 164, 96);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#fresa {
+  background-color: palevioletred;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#tLeches {
+  background-color: rgb(247, 209, 140);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#cafe {
+  background-color: #865439;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+
+#diseños {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 85%;
+}
+
+#diseños h2 {
+  /*align-items: flex-end;*/
+  padding: 1.5rem;
+  width: 100%;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.div-diseño {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem;
+  background: rgba(240, 240, 240);
+  box-shadow: 0 8px 32px 0 rgba(40, 40, 40, 0.37);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.div-diseño div {
+  padding: 0.5rem;
+  height: 2em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: bolder;
+  /*-webkit-text-stroke: 1px black;*/
+}
+
+.content {
+  width: 50%;
+}
+
+#sol {
+  width: 100%;
+  background-image: url(images/spaceBg.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+#mercurio {
+  width: 100%;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background-image: url(images/spaceBg.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#venus {
+  width: 100%;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background-image: url(images/spaceBg.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#tierra {
+  width: 100%;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background-image: url(images/spaceBg.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#marte {
+  width: 100%;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background-image: url(images/spaceBg.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#jupiter {
+  width: 100%;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background-image: url(images/spaceBg.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#saturno {
+  width: 100%;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background-image: url(images/spaceBg.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#urano {
+  width: 100%;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background-image: url(images/spaceBg.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#neptuno {
+  width: 100%;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background-image: url(images/spaceBg.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
+#pluton {
+  width: 100%;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background-image: url(images/spaceBg.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(240, 240, 240);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2em;
+}
