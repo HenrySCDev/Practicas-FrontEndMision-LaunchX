@@ -1,0 +1,207 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Header*/
+header {
+  align-items: center;
+  display: flex;
+  height: 11em;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px 0 rgba(41, 47, 139, 0.37);
+}
+
+header h1 {
+  color: rgb(56, 88, 214);
+  color: radial-gradient(
+    circle,
+    rgba(56, 88, 214, 1) 0%,
+    rgba(39, 71, 197, 1) 100%
+  );
+  font-weight: bolder;
+  font-size: 40px;
+  margin-left: 10%;
+}
+
+header nav {
+  margin-right: 5%;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header li {
+  padding: 15px 0px;
+  margin: 1em;
+}
+
+header li:hover  {
+  background: rgb(56, 88, 214);
+  background: radial-gradient(
+    circle,
+    rgb(67, 99, 226) 0%,
+    rgb(53, 88, 228) 100%
+  );
+  border-radius: 5px;
+  box-shadow: 0 11px 35px 0px rgba(41, 47, 139, 0.37);
+}
+
+ul a {
+
+  color: rgb(109, 123, 147);
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px 35px;
+}
+
+ul a:hover {
+    color: white;
+}
+
+.button {
+  background: rgb(56, 88, 214);
+  background: radial-gradient(
+    circle,
+    rgba(56, 88, 214, 1) 0%,
+    rgba(39, 71, 197, 1) 100%
+  );
+  border-radius: 5px;
+  box-shadow: 0 11px 35px 0px rgba(41, 47, 139, 0.37);
+}
+
+.button a {
+  color: white;
+}
+
+/*Content-SectionMain*/
+
+.content__secMain {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+
+.mainLeft {
+  margin: 18%;
+}
+
+.mainLeft h2 {
+  font-size: 90px;
+  color: rgb(31, 62, 114);
+}
+
+.textTittle {
+  color: rgb(120, 141, 160);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.group {
+  display: flex;
+  margin-top: 35px;
+}
+
+.imgTxtGroup {
+  display: flex;
+  margin: 15px;
+  align-items: center;
+}
+
+.imgTxtGroup img{
+  margin: 5px;
+}
+
+.imgTxtGroup p{
+  margin-left: 24px;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(31, 62, 114);
+}
+
+.shedule {
+  margin-top: 35%;
+}
+
+.shedule p {
+  font-size: 30px;
+}
+
+.right {
+  width: 50%;
+  background-image: url(Images/nurseMain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+
+
+/* --Info copy--
+            
+            <div><!--float block-->
+                <div >
+
+                    <img src="" alt="location" ><!--Insertar Imagen!!!-->
+                    <!--<p class="textImg__text">Location</p>-->
+                    <label for=""></label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="textImg">
+
+                    <img src="" alt="date"><!--Insertar Imagen!!!-->
+                    <p class="textImg__text">Date</p>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="textImg">
+
+                    <img src="" alt="vType"><!--Insertar Imagen!!!-->
+                    <p class="textImg__text">Vaccine Type</p>
+                    <input list="vaccine">
+                    <datalist id="vaccine">
+                        <option value="AstraZeneca">
+                        <option value="Sinovac">
+                        <option value="Pfizer">
+                        <option value="Moderna">
+                    </datalist>
+                </div>
+                <a href="#" class="button">Submit</a>
+
+            </div>
+
+       </section>
+        <section class="content__secWhy">
+
+            <div class="secWhy__vaccineImages">
+
+                <img src="" alt="astrazeneca"><!--Insertar Imagen!!!-->
+                <img src="" alt="sinovac"><!--Insertar Imagen!!!-->
+                <img src="" alt="pfizer"><!--Insertar Imagen!!!-->
+                <img src="" alt="moderna"><!--Insertar Imagen!!!-->
+            </div>
+            <h2>Why should i vaccine?</h2>
+            <p>In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 beneficts of COVID-19 vaccination:</p>
+            <div class="">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </section>
+        <section class="content__secPreparations">
+
+        </section>
+        <section class="content__secContacts">
+        </section>
+
+*/
