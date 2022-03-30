@@ -1,0 +1,387 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(92, 107, 181);
+    background: radial-gradient( circle, rgba(92, 107, 181, 1) 0%, rgba(73, 85, 143, 1) 33%, rgba(33, 40, 66, 1) 90%, rgba(27, 32, 53, 1) 100%);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.light_blue {
+    color: #7ee9ff;
+}
+
+.dark_blue {
+    color: #05cbf9;
+}
+
+#poke_list {
+    width: 28vw;
+    height: 100vh;
+    padding-left: 70px;
+}
+
+#gridPokemons {
+    margin-top: 35px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    height: 70vh;
+    /*border: 1px solid wheat;*/
+    /*background-color: rgba(41, 41, 41, 0.2);*/
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow: auto;
+    padding: 3.5px;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+
+
+/* Firefox */
+
+#gridPokemons {
+    scrollbar-width: auto;
+    scrollbar-color: #ff0000 #ffffff00;
+    margin-right: 19px;
+}
+
+
+/* Chrome, Edge, and Safari */
+
+#gridPokemons::-webkit-scrollbar {
+    width: 10px;
+}
+
+#gridPokemons::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+#gridPokemons::-webkit-scrollbar-thumb {
+    background-color: rgba(41, 41, 41, 0.5);
+    border-radius: 10px;
+    border: 5px solid rgba(41, 41, 41, 0.2);
+}
+
+#gridPokemons div.pokemon_sprite {
+    height: 4.9em;
+    width: 4.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    margin: 3px;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 2px 2px 2px black;
+}
+
+#gridPokemons span.poke_no {
+    text-align: center;
+    font-size: 17px;
+}
+
+#gridPokemons span.poke_name {
+    text-align: center;
+    font-size: 15px;
+}
+
+#gridPokemons img.sprite {
+    background-color: rgba(41, 41, 41, 0.2);
+    border-radius: 10px;
+    height: 2.7em;
+    width: 2.7em;
+}
+
+#pokeSearch {
+    margin-right: 15px;
+    align-items: center;
+    display: flex;
+    height: 4vh;
+}
+
+#pokeSearch img {
+    margin-left: 30px;
+    width: 32px;
+    height: 32px;
+}
+
+#pokeSearch img:active {
+    width: 28px;
+    height: 28px;
+}
+
+#pokeSearch input {
+    position: absolute;
+    left: 150px;
+    outline: none;
+    border: 3px solid #86f6fa;
+    border-radius: 10px;
+    background-color: transparent;
+    background-color: rgba(41, 41, 41, 0.2);
+    text-align: center;
+    height: 30px;
+    width: 20vw;
+    font-weight: 700;
+    font-size: medium;
+}
+
+#pokeSearch input::placeholder {
+    color: rgb(140, 140, 140);
+}
+
+#poke_info {
+    width: 70vw;
+    height: 100vh;
+    /*border: 1px solid #219ecd;*/
+    display: flex;
+    flex-direction: column;
+}
+
+#poke_info img#corner-tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#poke_info img#corner-tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#poke_info img#corner-bl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#poke_info img#corner-br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+#poke_info div#general_info {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+}
+
+#poke_info div#general_info div.side {
+    display: flex;
+    flex-direction: column;
+}
+
+#poke_info div#general_info div.left_side {
+    height: 100%;
+    width: 30%;
+    /*border: 1px solid red;*/
+    padding-left: 15px;
+}
+
+#poke_info div#general_info div.right_side {
+    height: 100%;
+    width: 65%;
+    /*border: 1px solid yellow;*/
+    justify-content: flex-end;
+}
+
+.imgType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    width: fit-content;
+    text-align: center;
+    margin-left: 5px;
+    padding: 0 15px;
+    border: 2px solid rgb(140, 140, 140);
+    border-radius: 20px 0;
+    background-color: rgba(41, 41, 41, 0.5);
+}
+
+#pokeDesc {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(41, 41, 41, 0.5);
+}
+
+
+/*.pokemonID {
+    margin-bottom: 15px;
+}*/
+
+#poke_info div#abilities {
+    width: 100%;
+    height: 15%;
+    /*border: 1px solid green;*/
+}
+
+#poke_info div#abilities ul {
+    display: flex;
+    list-style: none;
+}
+
+#poke_info div#abilities li {
+    text-align: center;
+    margin: auto;
+    background-color: rgba(41, 41, 41, 0.5);
+    padding: 7px 20px;
+    height: max-content;
+    width: max-content;
+    border-radius: 5px;
+}
+
+.none {
+    color: gray;
+}
+
+.special {
+    color: orange;
+}
+
+#poke_info div#poke_moves {
+    width: 100%;
+    height: 40%;
+}
+
+#poke_moves h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#moves {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 87%;
+    flex-wrap: wrap;
+    color: transparent;
+}
+
+.childMove {
+    background-color: rgba(41, 41, 41, 0.5);
+    width: max-content;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pokeType1,
+#pokeType2 {
+    background-color: rgba(41, 41, 41, 0.5);
+    width: max-content;
+    height: max-content;
+    padding: 5px 15px;
+    margin: 25px 15px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.empty {
+    border-color: transparent !important;
+}
+
+.normal {
+    color: rgb(169, 168, 120);
+}
+
+.fighting {
+    color: rgb(193, 49, 41);
+}
+
+.flying {
+    color: rgb(152, 164, 224);
+}
+
+.poison {
+    color: rgb(187, 90, 159);
+}
+
+.ground {
+    color: rgb(231, 213, 168);
+}
+
+.rock {
+    color: rgb(190, 165, 99);
+}
+
+.bug {
+    color: rgb(169, 189, 66);
+}
+
+.ghost {
+    color: rgb(103, 98, 178);
+}
+
+.steel {
+    color: rgb(175, 173, 194);
+}
+
+.fire {
+    color: rgb(254, 72, 51);
+}
+
+.water {
+    color: rgb(31, 147, 246);
+}
+
+.grass {
+    color: rgb(116, 215, 106);
+}
+
+.electric {
+    color: rgb(255, 196, 65);
+}
+
+.psychic {
+    color: rgb(253, 111, 161);
+}
+
+.ice {
+    color: rgb(71, 206, 228);
+}
+
+.dragon {
+    color: rgb(133, 103, 237);
+}
+
+.dark {
+    color: rgb(118, 90, 78);
+}
+
+.fairy {
+    color: rgb(251, 183, 242);
+}

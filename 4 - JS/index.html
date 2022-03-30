@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="pokedex.js"></script>
+    <title>Pokedex LaunchX</title>
+</head>
+
+<body>
+    <!--Section: PokeList-->
+    <section id="poke_list">
+        <div>
+            <!--Div: Grid Pokemons-->
+            <div id="gridPokemons">
+                <!--<div class="pokemon_sprite">
+                    <span class="poke_no">000</span>
+                    <span class="poke_name">name</span>
+                    <img class="sprite" src="https://img.itch.zone/aW1nLzI0ODQ0NjcuZ2lm/347x500m/FOj44r.gif">
+                </div>-->
+            </div>
+
+            <!--Div: Search Pokemon-->
+            <div id="pokeSearch">
+                <!--<label for="pokeInput"></label>-->
+                <img for src="assets/search.png" alt="search" onclick="fetchPokemon()" role="button" />
+                <input type="text" class="dark_blue" name="pokeInput" id="pokeInput" onkeypress="if(event.keyCode == 13) fetchPokemon()" placeholder="Pokemon ID or Name" />
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Section: PokeInfo-->
+    <section id="poke_info">
+
+        <!--Corner Decorations -->
+        <img id="corner-tr" src="assets/cornerTR.png" alt="" height="200" width="210">
+        <img id="corner-tl" src="assets/cornerTLBR.png" alt="" height="80" width="62">
+        <img id="corner-bl" src="assets/cornerBL.png" alt="" height="200" width="210">
+        <img id="corner-br" src="assets/cornerTLBR.png" alt="" height="80" width="62">
+
+
+
+        <!--Div: Pokemon General Info-->
+        <div id="general_info">
+            <div class="side left_side">
+                <!--Div: Pokemon Name, ID and Specie-->
+                <div class="pokemonID">
+                    <p id="pokeNameID" class="light_blue"><br></p>
+                    <p id="pokeSpecie" class="dark_blue"><br></p>
+                </div>
+
+                <!--Div: Pokemon Image, Type, (height and width)-->
+                <div>
+                    <div class="imgType">
+                        <img src="assets/pokeball.png" alt="Pokemon" id="pokeImg" width="250" height="250" />
+                    </div>
+                    <div class="types">
+                        <p id="pokeType1" class="empty"></p>
+                        <p id="pokeType2" class="empty"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="side right_side">
+                <div class="stat">
+                    <!--<img src="assets/stat.png" alt="thuthgu">-->
+                </div>
+                <!--P: Pokemon Description-->
+                <h3 class="title">Description</h3>
+                <p id="pokeDesc"></p>
+            </div>
+        </div>
+
+        <!--Div: Pokemon Abilities-->
+        <div id="abilities">
+            <h3 class="title">Abilities</h3>
+            <ul>
+                <li id="slot1"></li>
+                <li id="slot2"></li>
+                <li id="slot3"></li>
+            </ul>
+        </div>
+
+        <!--Div: Pokemon Moves-->
+        <div id="poke_moves">
+            <h3 class="title">Moves</h3>
+            <div id="moves" class="light_blue">
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
