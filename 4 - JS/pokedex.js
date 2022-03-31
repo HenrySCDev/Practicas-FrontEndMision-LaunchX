@@ -38,21 +38,6 @@ async function fetchGrid() {
         let img = data.sprites.other["official-artwork"].front_default;
 
         gridPokemon(ID, name, img);
-
-        /*fetch(urlPokemon).then((res) => {
-            console.log("res");
-            console.log(res);
-            if (res.status != "200") {
-                pokeImage("./Assets/pokeball.png"); // **CAMBIAR POR UN RESET();**
-            } else {
-                return res.json();
-            }
-        }).then((data) => {
-            console.log("GridData");
-            console.log(data);
-
-        })*/
-
     }
 }
 
