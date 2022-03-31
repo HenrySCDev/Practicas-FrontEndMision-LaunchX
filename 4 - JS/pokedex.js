@@ -24,13 +24,22 @@ const fetchPokemon = () => {
     })
 }
 
-function fetchGrid() {
+async function fetchGrid() {
     console.log("FetchGrid")
     for (let i = 1; i <= 898; i++) {
 
         const urlPokemon = `https://pokeapi.co/api/v2/pokemon/${i}`;
 
-        fetch(urlPokemon).then((res) => {
+        const res = await fetch(urlPokemon);
+        const data = await res.json();
+
+        let name = data.name;
+        let ID = data.id;
+        let img = data.sprites.other["official-artwork"].front_default;
+
+        gridPokemon(ID, name, img);
+
+        /*fetch(urlPokemon).then((res) => {
             console.log("res");
             console.log(res);
             if (res.status != "200") {
@@ -42,12 +51,7 @@ function fetchGrid() {
             console.log("GridData");
             console.log(data);
 
-            let name = data.name;
-            let ID = data.id;
-            let img = data.sprites.other["official-artwork"].front_default;
-
-            gridPokemon(ID, name, img);
-        })
+        })*/
 
     }
 }
